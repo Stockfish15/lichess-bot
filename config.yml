@@ -12,7 +12,7 @@ engine:       # engine settings
       standard: # list of book file paths for variant standard
         - Goi5.1.bin
         - Aaricia_2012.bin
-        - Drawkiller_EloZoom_big.bin
+    #    - Drawkiller_EloZoom_big.bin
          
 #      atomic: # list of book file paths for variant atomic
 #        - engines/atomicbook1.bin
