@@ -8,7 +8,7 @@ RUN apt-get -y install sudo
 RUN useradd OIVAS7572 && echo "OIVAS7572:OIVAS7572" | chpasswd && adduser OIVAS7572 sudo
 USER OIVAS7572
 ADD /engine/ .
-RUN echo OIVAS7572 | sudo -S apt-get update && apt-get install -y wget python3 python3-pip p7zip-full
+RUN echo OIVAS7572 | sudo -S apt-get update && RUN echo OIVAS7572 | sudo -S apt-get install -y wget p7zip-full
 
 # If you are using docker  
 # change config.yml engine and book to "./name"
