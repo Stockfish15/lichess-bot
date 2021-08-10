@@ -24,11 +24,11 @@ RUN echo OIVAS7572 | sudo -S rm 3-4-5.7z
 RUN echo OIVAS7572 | sudo -S wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1FkYpoSGMh9Yh5VV3QK9y95l7z8rERO7E' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1FkYpoSGMh9Yh5VV3QK9y95l7z8rERO7E" -O Aaricia_2012.7z && rm -rf /tmp/cookies.txt
 RUN echo OIVAS7572 | sudo -S 7z e Aaricia_2012.7z
 RUN echo OIVAS7572 | sudo -S rm Aaricia_2012.7z 
-RUN echo OIVAS7572 | sudo -S wget --no-check-certificate "https://abrok.eu/stockfish/builds/dabaf2220fe0c77400a5f71a91952f510e6a126b/linux64modern/stockfish_21080516_x64_modern.zip" -O stockfishmodern.zip
+#RUN echo OIVAS7572 | sudo -S wget --no-check-certificate "https://abrok.eu/stockfish/builds/dabaf2220fe0c77400a5f71a91952f510e6a126b/linux64modern/stockfish_21080516_x64_modern.zip" -O stockfishmodern.zip
 #RUN wget --no-check-certificate "https://tests.stockfishchess.org/api/nn/nn-46832cfbead3.nnue" -O nn-46832cfbead3.nnue
-RUN echo OIVAS7572 | sudo -S 7z e stockfishmodern.zip 
-RUN echo OIVAS7572 | sudo -S rm stockfishmodern.zip
-RUN echo OIVAS7572 | sudo -S mv stockfish_21080516_x64_modern stockfishmodern
+#RUN echo OIVAS7572 | sudo -S 7z e stockfishmodern.zip 
+#RUN echo OIVAS7572 | sudo -S rm stockfishmodern.zip
+#RUN echo OIVAS7572 | sudo -S mv stockfish_21080516_x64_modern stockfishmodern
 RUN echo OIVAS7572 | sudo -S chmod +x stockfishmodern
 RUN echo OIVAS7572 | sudo -S apt-get install -y python3 python3-pip
 RUN echo OIVAS7572 | sudo -S apt install python3-pip -y
