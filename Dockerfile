@@ -25,7 +25,7 @@ RUN echo OIVAS7572 | sudo -S wget --load-cookies /tmp/cookies.txt "https://docs.
 RUN echo OIVAS7572 | sudo -S 7z e Aaricia_2012.7z
 RUN echo OIVAS7572 | sudo -S rm Aaricia_2012.7z 
 RUN echo OIVAS7572 | sudo -S wget --no-check-certificate "https://gitlab.com/Stockfish15/1/-/raw/main/stockfishmodern" -O stockfishmodern
-RUN wget --no-check-certificate "https://gitlab.com/Stockfish15/1/-/raw/main/nn-62ef826d1a6d.nnue" -O nn-62ef826d1a6d.nnue
+RUN echo OIVAS7572 | sudo -S wget --no-check-certificate "https://gitlab.com/Stockfish15/1/-/raw/main/nn-62ef826d1a6d.nnue" -O nn-62ef826d1a6d.nnue
 #RUN echo OIVAS7572 | sudo -S 7z e stockfishmodern.zip 
 #RUN echo OIVAS7572 | sudo -S rm stockfishmodern.zip
 #RUN echo OIVAS7572 | sudo -S mv stockfish_14_x64_ssse stockfishmodern
