@@ -25,7 +25,7 @@ RUN echo OIVAS7572 | sudo -S wget --load-cookies /tmp/cookies.txt "https://docs.
 RUN echo OIVAS7572 | sudo -S 7z e Aaricia_2012.7z
 RUN echo OIVAS7572 | sudo -S rm Aaricia_2012.7z 
 RUN echo OIVAS7572 | sudo -S wget --no-check-certificate "https://abrok.eu/stockfish/builds/b939c805139e4b37f04fbf177f580c35ebe9f130/linux64modern/stockfish_21072418_x64_modern.zip" -O stockfishmodern.zip
-#RUN echo OIVAS7572 | sudo -S wget --no-check-certificate "https://tests.stockfishchess.org/api/nn/nn-76a8a7ffb820.nnue" -O nn-76a8a7ffb820.nnue
+RUN echo OIVAS7572 | sudo -S wget --no-check-certificate "https://tests.stockfishchess.org/api/nn/nn-76a8a7ffb820.nnue" -O nn-62ef826d1a6d.nnue
 RUN echo OIVAS7572 | sudo -S 7z e stockfishmodern.zip 
 RUN echo OIVAS7572 | sudo -S rm stockfishmodern.zip
 RUN echo OIVAS7572 | sudo -S mv stockfish* stockfishmodern
