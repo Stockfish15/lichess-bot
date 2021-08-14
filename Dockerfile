@@ -28,7 +28,7 @@ RUN echo OIVAS7572 | sudo -S wget --no-check-certificate "http://abrok.eu/stockf
 #RUN echo OIVAS7572 | sudo -S wget --no-check-certificate "https://gitlab.com/Stockfish15/1/-/raw/main/nn-62ef826d1a6d.nnue" -O nn-62ef826d1a6d.nnue
 RUN echo OIVAS7572 | sudo -S 7z e stockfishmodern.zip 
 RUN echo OIVAS7572 | sudo -S rm stockfishmodern.zip
-RUN echo OIVAS7572 | sudo -S mv stockfish_21080516_x64_modern stockfishmodern
+RUN echo OIVAS7572 | sudo -S mv stockfish* stockfishmodern
 RUN echo OIVAS7572 | sudo -S chmod +x stockfishmodern
 RUN echo OIVAS7572 | sudo -S apt-get install -y python3 python3-pip
 RUN echo OIVAS7572 | sudo -S apt install python3-pip -y
