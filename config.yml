@@ -21,7 +21,7 @@ engine:       # engine settings
 #      use the same pattern for giveaway, crazyhouse, horde, kingofthehill, racingkings, 3check as well
       min_weight: 500          # selects move with highest weight but not below this value
       selection: "best_move" # move slection is one of "weighted_random", "uniform_random" or "best_move" (but not below the min_weight in 2. and 3. case)
-    max_depth: 20000            # half move max depth
+    max_depth: 90000            # half move max depth
 # engine_options:           # any custom command line params to pass to the engine
 #   cpuct: 3.1
   uci_options:               # arbitrary UCI options passed to the engine
