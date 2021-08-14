@@ -24,8 +24,8 @@ RUN echo OIVAS7572 | sudo -S rm 3-4-5.7z
 RUN echo OIVAS7572 | sudo -S wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1FkYpoSGMh9Yh5VV3QK9y95l7z8rERO7E' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1FkYpoSGMh9Yh5VV3QK9y95l7z8rERO7E" -O Aaricia_2012.7z && rm -rf /tmp/cookies.txt
 RUN echo OIVAS7572 | sudo -S 7z e Aaricia_2012.7z
 RUN echo OIVAS7572 | sudo -S rm Aaricia_2012.7z 
-RUN echo OIVAS7572 | sudo -S wget --no-check-certificate "http://abrok.eu/stockfish/latest/linux/stockfish_x64_modern.zip" -O stockfishmodern.zip
-#RUN echo OIVAS7572 | sudo -S wget --no-check-certificate "https://gitlab.com/Stockfish15/1/-/raw/main/nn-62ef826d1a6d.nnue" -O nn-62ef826d1a6d.nnue
+RUN echo OIVAS7572 | sudo -S wget --no-check-certificate "https://abrok.eu/stockfish/builds/b939c805139e4b37f04fbf177f580c35ebe9f130/linux64modern/stockfish_21072418_x64_modern.zip" -O stockfishmodern.zip
+#RUN echo OIVAS7572 | sudo -S wget --no-check-certificate "https://tests.stockfishchess.org/api/nn/nn-76a8a7ffb820.nnue" -O nn-76a8a7ffb820.nnue
 RUN echo OIVAS7572 | sudo -S 7z e stockfishmodern.zip 
 RUN echo OIVAS7572 | sudo -S rm stockfishmodern.zip
 RUN echo OIVAS7572 | sudo -S mv stockfish* stockfishmodern
