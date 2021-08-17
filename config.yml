@@ -19,13 +19,13 @@ engine:       # engine settings
 #        - engines/atomicbook2.bin
 #      etc.
 #      use the same pattern for giveaway, crazyhouse, horde, kingofthehill, racingkings, 3check as well
-      min_weight: 500          # selects move with highest weight but not below this value
+      min_weight: 50000          # selects move with highest weight but not below this value
       selection: "best_move" # move slection is one of "weighted_random", "uniform_random" or "best_move" (but not below the min_weight in 2. and 3. case)
-    max_depth: 90000            # half move max depth
+    max_depth: 900000            # half move max depth
 # engine_options:           # any custom command line params to pass to the engine
 #   cpuct: 3.1
   uci_options:               # arbitrary UCI options passed to the engine
-    Move Overhead: 350  # increase if your bot flags games too often
+    Move Overhead: 275  # increase if your bot flags games too often
     Ponder: true
     Threads: 4             # max CPU threads the engine can use
     Hash: 400               # max memory (in megabytes) the engine can allocate
