@@ -25,10 +25,10 @@ engine:       # engine settings
 # engine_options:           # any custom command line params to pass to the engine
 #   cpuct: 3.1
   uci_options:               # arbitrary UCI options passed to the engine
-    Move Overhead: 350  # increase if your bot flags games too often
+    Move Overhead: 275  # increase if your bot flags games too often
     Ponder: true
     Threads: 4             # max CPU threads the engine can use
-    Hash: 350               # max memory (in megabytes) the engine can allocate
+    Hash: 375               # max memory (in megabytes) the engine can allocate
 #   Use_NNUE: true
 #    EvalFile: "./nn-76a8a7ffb820.nnue"
 #   go_commands:             # additional options to pass to the UCI go command
@@ -51,7 +51,7 @@ move_overhead: 1000        # increase if your bot flags games too often
 
 challenge:                   # incoming challenges
   concurrency: 1             # number of games to play simultaneously
-  sort_by: "best"            # possible values: "best", "first"
+  sort_by: "first"            # possible values: "best", "first"
   accept_bot: true          # accepts challenges coming from other bots
   only_bot: false            # accept challenges by bots only
   max_increment: 3         # maximum amount of increment to accaept a challenge. the max is 180. set to 0 for no increment
